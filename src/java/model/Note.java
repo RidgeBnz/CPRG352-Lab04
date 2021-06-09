@@ -10,28 +10,29 @@ package model;
  * @author 840288
  */
 public class Note {
-    private String contents;
-    private String title;
+    private String noteTitle;
+    private String noteContents;
+
     
     public Note() {
-        this.title = "";
-        this.contents = "";
+        this.noteTitle = "";
+        this.noteContents = "";
     }
     public Note(String title, String contents) {
-        this.title = title;
-        this.contents = contents;
+        this.noteTitle = title;
+        this.noteContents = contents;
     }
     public String getTitle() {
-        return title;
+        return noteTitle;
     }
     public void setTitle(String title) {
-        this.title = title;
+        this.noteTitle = title;
     }
     
     public String getContents() {
-        return contents;
+        return noteContents;
     }
     public void setContents(String content) {
-        this.contents = content;
+        this.noteContents = content;
     }
 }
